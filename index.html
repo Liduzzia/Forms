@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Registration</title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+        <link rel="stylesheet" type="text/css" href="reset.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;700&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <div class="whole-container">
+            <div class="image-container">
+                <img  class="image-container__image" src="mountains-2.jpg" alt=""/>
+            </div>
+            <div class="form-container">
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                <div><h1 class="form-container__title">Регистрация</h1></div>
+                <div class="form-container__personaldata"> 
+                    <div class="form-container__item">
+                        <label for="name" class="label">Имя</label>
+                        <div><input class="input" id="name" type="text" name="firstName"/></div>
+                    </div>
+                    <div class="form-container__item">
+                        <label  for="lastname" class="label">Фамилия</label>
+                        <div><input class="input" id="lastname" type="text" name="lastName"/></div>
+                    </div>
+                    <div class="form-container__item">
+                        <label for="mail" class="label">E-mail</label>
+                        <div><input  class="input" id="mail" type="email" name="email"/></div>
+                    </div>
+                    <div class="form-container__item">
+                        <label class="label">Телефон</label>
+                        <div><input class="input" type="tel" name="phone-number"/></div>
+                    </div>
+                    <div class="form-container__item">
+                        <label class="label">Ваш пол</label>
+                        <div class="radio">
+                            <div class="item-radio">
+                                <label for="gender" class="gender">Женский</label>
+                                <div><input class="input" id="gender" type="radio" name="gender" value="female"/></div>
+                            </div>
+                            <div class="item-radio">
+                                <label  for="gender" class="gender">Мужской</label>
+                                <div><input class="input" id="gender" type="radio" name="gender" value="male"/></div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="form-container__item">
+                        <label for="date" class="label">Дата рождения</label>
+                        <div><input class="input" id="date" type="date"/></div>
+
+                    </div>
+                </div>
+                <div><h2 class="form-container__title-address">Адрес доставки</h2></div>
+                <div class="form-container__personaldata row-address">
+                    <div class="form-container__item item-destination">
+                        <label for="country" class="label">Страна</label>
+                        <div>
+                        <select  class="input" id="country" name="country" class="input">
+                            <option></option>
+                            <option>Австрия</option>
+                            <option>Бельгия</option>
+                            <option>Великобритания</option>
+                            <option>Германия</option>
+                            <option>Дания</option>
+                            <option>Китай</option>
+                            <option>Мексика</option>
+                            <option>ОАЭ</option>
+                            <option>Португалия</option>
+                            <option>Россия</option>
+                            <option>США</option>
+                            <option>Финляндия</option>
+                            <option>Швеция</option>
+
+                        </select>
+                        </div>
+                    </div>
+                    <div class="form-container__item item-destination">
+                        <label for="city" class="label">Город</label>
+                        <div><input class="input" id="city" type="text" name="city" class="input-destination"/></div>
+                    </div>
+                    <div class="form-container__item item-destination">
+                        <label for="index" class="label">Почтовый индекс</label>
+                        <div><input class="input" id="index" type="text" name="index" class="input-destination"/></div>
+                    </div>
+                    <div class="form-container__item item-address">
+                        <label for="address" class="label">Адрес доставки (улица, дом, квартира)</label>
+                        <div><input class="input" id="address" type="text"  name="address" class="input-address"/></div>
+                    </div>
+                </div>
+                <div>
+                    <div><h2 class="form-container__title-notification">Уведомлять об акциях и скидках</h2></div>
+                    <div><p class="form-container__text">Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p></div>
+                    <div class="check-container">
+                        <div class="checkbox">
+                            <input class="checkbox__item"  type="checkbox" id="contacts" name="contact1" value="email"/>
+                            <label class="checkbox__text" for="contact1">По e-mail</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="checkbox__item" type="checkbox" id="contacts"name="contact2" value="sms"/>
+                            <label class="checkbox__text" for="contact2">По SMS</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="checkbox__item"  type="checkbox" id="contacts" name="contact3" value="notification"/>
+                            <label class="checkbox__text" for="contact3">Push-уведомления в приложении</label>
+                        </div>
+                    </div>
+                    
+                </div>
+                    <button class="button_create_account" type="submit">Создать аккаунт</button>
+
+                </form>
+                
+            </div>
+        </div>
+
+    </body>
+</html>
